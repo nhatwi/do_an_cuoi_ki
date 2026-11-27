@@ -1,1 +1,1 @@
-# do_an_cuoi_ki
+Đồ án cuối kì của nhóm TECH
