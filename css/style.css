@@ -1,0 +1,30 @@
+/* Cố định chiều cao ảnh sản phẩm cho đều hàng */
+.product-img {
+  height: 210px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Hiệu ứng nổi thẻ & phóng nhẹ ảnh khi rê chuột */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.06);
+}
+
+/* Hiệu ứng hiện dần khi tải hoặc lọc sản phẩm */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
